@@ -35,6 +35,7 @@ namespace vlc
         video( vlc::basic_player& player );
 
         unsigned track_count();
+        bool get_size(unsigned track, unsigned *px, unsigned *py);
 
         //can return -1 if there is no active video track
         int get_track();
